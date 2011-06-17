@@ -33,8 +33,8 @@ get '/generate' do
   @result = generate_text(params)
   content_type :json
   if @result
-    JSONP :result => "<p>Single Mom Learns One Simple Trick to Whiten Teeth</p>"
+    JSONP :result => "<audio src='http://hollow-robot-198.heroku.com/audio/s1.ogg' autoplay='autoplay' /><p>Single Mom Learns One Simple Trick to Whiten Teeth</p>"
   else
-    JSONP :result => "<p>Cow Discovers How to Fly Airplane</p>"
+    JSONP :result => "<audio src='http://hollow-robot-198.heroku.com/audio/s2.ogg' autoplay='autoplay' /><p>Cow Discovers How to Fly Airplane</p>"
   end
 end
